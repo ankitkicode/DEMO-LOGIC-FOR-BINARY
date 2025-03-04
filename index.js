@@ -1,9 +1,10 @@
 require('dotenv').config();
+
 const express = require('express');
 const app = express();
 const dbConnection = require('./dbConnection/dbConnection');
 const port = process.env.PORT || 3000;
-
+require("./dailyROI/cronJobs");
 dbConnection();
 
 app.use(express.static('public'));

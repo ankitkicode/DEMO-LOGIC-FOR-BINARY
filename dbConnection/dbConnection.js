@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const dbConnection = async () => {
     try {
-        await mongoose.connect('mongodb://localhost:27017/DemoLogicBinary', {
+        await mongoose.connect('mongodb://localhost:27017/CRYPTOZ', {
             // useNewUrlParser: true,
             // useUnifiedTopology: true,
         });
